@@ -77,14 +77,7 @@ export default function Hero() {
         </motion.div>
       </div>
 
-      {/* Subtle bottom indicator */}
-      <motion.div 
-        animate={{ y: [0, 10, 0] }} 
-        transition={{ repeat: Infinity, duration: 2 }}
-        className="absolute bottom-10"
-      >
-        <div className="w-[1px] h-12 bg-gradient-to-b from-transparent via-gold/50 to-transparent" />
-      </motion.div>
+
     </section>
   );
 }

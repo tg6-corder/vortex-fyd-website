@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>事業計画書 - VORTEX FYD</title>
+    <style>
+        :root {
+            --gold: #D4AF37;
+            --navy: #000033;
+            --text-main: #333;
+            --text-light: #666;
+            --border: #eee;
+        }
+
+        body {
+            font-family: "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
+            line-height: 1.6;
+            color: var(--text-main);
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+        }
+
+        /* A4 Print Optimization */
+        @page {
+            size: A4;
+            margin: 20mm;
+        }
+
+        @media print {
+            body { background: white; }
+            .no-print { display: none; }
+            .page-break { page-break-before: always; }
+            .container { box-shadow: none; padding: 0; }
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 40px auto;
+            background: white;
+            padding: 60px 80px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+            position: relative;
+        }
+
+        /* Cover Page */
+        .cover {
+            height: 90vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            border: 1px solid var(--border);
+            margin-bottom: 60px;
+        }
+
+        .cover img {
+            max-width: 250px;
+            margin-bottom: 40px;
+        }
+
+        .cover h1 {
+            font-size: 3rem;
+            letter-spacing: 0.1em;
+            margin-bottom: 10px;
+            color: var(--navy);
+        }
+
+        .cover p.subtitle {
+            font-size: 1.2rem;
+            color: var(--gold);
+            margin-bottom: 80px;
+            font-weight: bold;
+        }
+
+        .cover-info {
+            text-align: left;
+            width: 100%;
+            max-width: 300px;
+            border-top: 2px solid var(--gold);
+            padding-top: 20px;
+        }
+
+        .cover-info div {
+            margin-bottom: 10px;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        /* Headings */
+        h2 {
+            border-bottom: 2px solid var(--gold);
+            padding-bottom: 8px;
+            margin-top: 40px;
+            font-size: 1.6rem;
+            color: var(--navy);
+        }
+
+        h3 {
+            color: var(--gold);
+            margin-top: 24px;
+            font-size: 1.2rem;
+            border-left: 4px solid var(--gold);
+            padding-left: 12px;
+        }
+
+        /* Table */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+
+        th, td {
+            border: 1px solid var(--border);
+            padding: 12px 15px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #fafafa;
+            width: 30%;
+            font-weight: bold;
+        }
+
+        /* List Styling */
+        ul {
+            padding-left: 20px;
+        }
+
+        li {
+            margin-bottom: 8px;
+        }
+
+        .strong {
+            font-weight: bold;
+            color: var(--navy);
+        }
+
+        /* Floating Message for Web view */
+        .print-tip {
+            background: var(--navy);
+            color: white;
+            padding: 15px;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+    </style>
+</head>
+<body>
+
+<div class="print-tip no-print">
+    💡 提出用PDF化の手順：ブラウザのメニューから「印刷」を選択し、送信先に「PDFとして保存」を指定してください。
+</div>
+
+<div class="container">
+    <!-- Cover Page -->
+    <div class="cover">
+        <img src="./public/logo.png" alt="VORTEX FYD Logo">
+        <h1>事業計画書</h1>
+        <p class="subtitle">Digital Solutions & Education Studio</p>
+        
+        <div class="cover-info">
+            <div><span>提出日</span> <span>2026年4月1日</span></div>
+            <div><span>屋号</span> <span>VORTEX FYD</span></div>
+            <div><span>代表者</span> <span>田中 嗣朗</span></div>
+        </div>
+    </div>
+
+    <div class="page-break"></div>
+
+    <!-- Table of Contents Placeholder (Static) -->
+    <h2>目次</h2>
+    <ol>
+        <li>会社概要</li>
+        <li>経営理念・ビジョン</li>
+        <li>事業の詳細内容</li>
+        <li>市場環境と自社の強み</li>
+        <li>収益モデル</li>
+        <li>銀行口座開設の目的と用途</li>
+        <li>中長期計画</li>
+    </ol>
+
+    <div class="page-break"></div>
+
+    <!-- Section 1 -->
+    <section>
+        <h2>1. 会社概要</h2>
+        <table>
+            <tr>
+                <th>屋号</th>
+                <td>VORTEX FYD（ヴォルテックス・エフワイディー）</td>
+            </tr>
+            <tr>
+                <th>代表者</th>
+                <td>田中 嗣朗（Tanaka Tsuguro）</td>
+            </tr>
+            <tr>
+                <th>所在地</th>
+                <td>〒150-0043 東京都渋谷区道玄坂1-10-8 渋谷道玄坂東急ビル2F-C</td>
+            </tr>
+            <tr>
+                <th>設立（開業）日</th>
+                <td>2026年4月1日（準備開始：2025年4月）</td>
+            </tr>
+            <tr>
+                <th>主な事業内容</th>
+                <td>モバイルアプリケーション開発、デジタルメディア運営、教育支援、ビジネスコンサルティング（医療DX準備中）</td>
+            </tr>
+        </table>
+    </section>
+
+    <!-- Section 2 -->
+    <section>
+        <h2>2. 経営理念・ビジョン</h2>
+        <p class="strong">「デジタルで人はもっと進化できる：実用的な知見と創造」</p>
+        <p>VORTEX FYDは、最先端のエンジニアリングと人間中心の設計を融合させ、個人の能力を拡張し、社会の課題を解決するソリューションを提供することをミッションとしています。単なるツールの提供に留まらず、利用者のライフスタイルや思考プロセスを豊かにする「体験」の創造を目指しています。</p>
+    </section>
+
+    <!-- Section 3 -->
+    <section>
+        <h2>3. 事業の詳細内容</h2>
+        
+        <h3>① 自社プロダクト開発事業（Digital Lab）</h3>
+        <p>AIや最新技術を活用した実用的なアプリケーションを開発・提供しています。</p>
+        <ul>
+            <li><span class="strong">StockEcho</span>: 投資家の思考を音声で即座に記録し、企業情報を一括管理する投資支援ツール。</li>
+            <li><span class="strong">VortexNote</span>: 音声入力とAI要約を組み合わせた、次世代のタスク管理・ボイスエディタ。</li>
+            <li><span class="strong">NForgEt</span>: 忘却曲線を考慮したアルゴリズムを搭載した、AI辞書連動型言語学習プラットフォーム。</li>
+            <li><span class="strong">GammaCare / ARSS</span>: 脳科学に基づいた40Hzオーディオ変調技術を用いた、認知機能ケア・活性化支援アプリ。</li>
+            <li><span class="strong">FRESTRO</span>: レコードOCRを活用し、家庭の食品ロスをAIで管理・削減するエコシステム。</li>
+        </ul>
+
+        <h3>② メディア・教育事業</h3>
+        <p>「言語の壁を超え、視点を広げる」をテーマに、デジタルメディアを通じた教育コンテンツの提供を行っています。</p>
+        <ul>
+            <li>英語学習メソッドの提供（YouTube、各種SNS、Webメディア）。</li>
+            <li>デジタル技術の活用リテラシー向上を目的とした情報発信。</li>
+        </ul>
+
+        <h3>③ コンサルティング事業（2026年度中開始予定）</h3>
+        <ul>
+            <li><span class="strong">医療DXコンサルティング</span>: 医療現場のデジタル化、業務効率化、およびAI活用に関する導入支援。</li>
+            <li><span class="strong">技術コンサルティング</span>: スタートアップや中小企業向けのモバイル戦略・DX戦略の立案。</li>
+        </ul>
+    </section>
+
+    <div class="page-break"></div>
+
+    <!-- Section 4 -->
+    <section>
+        <h2>4. 市場環境と自社の強み</h2>
+        <p>国内外でのAI市場、メンタルヘルス・ヘルスケア分野、および生活効率化（DX）需要は急速に拡大しており、高品質なモバイルソリューションの必要性が高まっています。</p>
+        <h3>自社の強み</h3>
+        <ul>
+            <li><span class="strong">多角的な開発力</span>: 金融、医療、教育、環境という異なるドメインの知見を一つのエコシステムとして統合できるエンジニアリング能力。</li>
+            <li><span class="strong">徹底したユーザー視点</span>: 最小限の入力で最大限の効果を得る（UXの自動化）設計思想。</li>
+        </ul>
+    </section>
+
+    <!-- Section 5 -->
+    <section>
+        <h2>5. 収益モデル</h2>
+        <ol>
+            <li><span class="strong">ライセンス販売</span>: アプリケーションのBtoC販売（買い切りモデルおよびサブスクリプションモデル）。</li>
+            <li><span class="strong">コンサルティング報酬</span>: 法人向けDX支援におけるプロジェクト単位の報酬。</li>
+            <li><span class="strong">広告・プロモーション収益</span>: 自社メディアにおけるタイアップおよび広告枠の運用。</li>
+        </ol>
+    </section>
+
+    <!-- Section 6 -->
+    <section>
+        <h2>6. 銀行口座開設の目的と用途</h2>
+        <p>事業の継続的な発展と透明性の確保のため、以下の目的で専用口座の開設を希望いたします。</p>
+        <ul>
+            <li><span class="strong">売上の受取</span>: 各アプリストアからの売上入金、およびコンサルティング報酬の決済用。</li>
+            <li><span class="strong">経費の支払い</span>: 開発サーバー（AWS/Google Cloud等）の維持費、API利用料（OpenAI等）、外注開発費、広告宣伝費、およびオフィス維持費の決済用。</li>
+        </ul>
+    </section>
+
+    <!-- Section 7 -->
+    <section>
+        <h2>7. 中長期計画</h2>
+        <ul>
+            <li><span class="strong">2026年度</span>: 既存プロダクト（Beta版）の正式版リリースおよび医療DXコンサルティングの本格始動。</li>
+            <li><span class="strong">2027年度</span>: 各プロダクトのグローバル展開（英語版対応済み）の加速と、売上目標300%成長を目指す。</li>
+            <li><span class="strong">2028年度</span>: 組織の法人化（株式会社化）および、新規AIソリューションの大型R&Dの開始。</li>
+        </ul>
+    </section>
+</div>
+
+</body>
+</html>
