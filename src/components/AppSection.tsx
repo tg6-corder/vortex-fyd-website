@@ -27,7 +27,7 @@ export default function AppSection() {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ delay: index * 0.1 }}
               viewport={{ once: true }}
-              className="group p-8 rounded-2xl bg-white/5 border border-white/5 hover:border-gold/30 hover:bg-white/[0.08] transition-all duration-500 relative"
+              className="group p-8 rounded-2xl bg-white/5 border border-white/5 hover:border-gold/30 hover:bg-white/[0.08] transition-all duration-500 relative flex flex-col items-center text-center"
             >
               <div className="absolute top-4 right-4">
                 <span className="text-[10px] font-bold tracking-widest text-gold border border-gold/40 px-2 py-0.5 rounded-full uppercase">

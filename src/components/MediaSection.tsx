@@ -37,7 +37,9 @@ export default function MediaSection() {
 
           {SITE_CONTENT.mediaSection.youtubeButton && (
             <a 
-              href="#" 
+              href={SITE_CONTENT.mediaSection.youtubeUrl}
+              target="_blank"
+              rel="noopener noreferrer"
               className="inline-flex items-center gap-2 px-6 py-3 bg-red-600 hover:bg-red-700 text-white font-medium rounded-lg transition-colors"
             >
               <Video className="w-5 h-5" />

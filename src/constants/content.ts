@@ -67,7 +67,8 @@ export const SITE_CONTENT = {
     title: "言語の壁を超え、\n視点を広げる",
     description: "大人の英語、やり直し、再勉強に。\n読み書きから、聞くしゃべるへ。\n私たちは、効果的なコミュニケーションのあり方を追求しています。",
     features: [],
-    youtubeButton: null,
+    youtubeButton: "YouTube チャンネル",
+    youtubeUrl: "https://www.youtube.com/@VORTEXFYD",
     comingSoon: {
       label: "次回予告 / Coming Soon",
       title: "実践的なコミュニケーション・メソッド",

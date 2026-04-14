@@ -2,7 +2,7 @@
 
 import { SITE_CONTENT } from "@/constants/content";
 import { motion, AnimatePresence } from "framer-motion";
-import { Mail, User, ChevronDown } from "lucide-react";
+import { Mail, User, ChevronDown, Video } from "lucide-react";
 import { useState } from "react";
 
 export default function Footer() {
@@ -99,9 +99,20 @@ export default function Footer() {
                     <p className="text-foreground/50 font-light mb-6 text-sm">
                       {SITE_CONTENT.footer.contact.description}
                     </p>
-                    <div className="flex items-center gap-4 text-foreground/80 hover:text-gold transition-colors cursor-pointer">
-                      <Mail className="w-4 h-4" />
-                      <span className="font-medium">{SITE_CONTENT.footer.contact.email}</span>
+                    <div className="space-y-4">
+                      <div className="flex items-center gap-4 text-foreground/80 hover:text-gold transition-colors cursor-pointer group">
+                        <Mail className="w-4 h-4" />
+                        <span className="font-medium group-hover:underline decoration-gold/30">{SITE_CONTENT.footer.contact.email}</span>
+                      </div>
+                      <a 
+                        href={SITE_CONTENT.mediaSection.youtubeUrl}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="flex items-center gap-4 text-foreground/80 hover:text-red-500 transition-colors cursor-pointer group"
+                      >
+                        <Video className="w-4 h-4" />
+                        <span className="font-medium group-hover:underline decoration-red-500/30">{SITE_CONTENT.mediaSection.youtubeButton}</span>
+                      </a>
                     </div>
                   </div>
                 </motion.div>
